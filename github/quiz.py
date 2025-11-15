@@ -30,6 +30,18 @@
 #     - ssh-keygen
 #
 # ### Внесение собственного вклада в проекты
+# 2.1 https://github.com/nigmatullin244/Data-Science-For-Beginners-from-scratch-SENATOROV
+#
+# 2.2 https://github.com/nigmatullin244/Data-Science-For-Beginners-from-scratch-SENATOROV/tree/dev
+#
+# 2.4 480 
+#
+# 2.6 https://github.com/nigmatullin244/Data-Science-For-Beginners-from-scratch-SENATOROV/pull/1
+#
+# 2.7 https://github.com/nigmatullin244/Data-Science-For-Beginners-from-scratch-SENATOROV/pulls?q=is%3Apr+is%3Aclosed
+#
+# 2.8 https://github.com/nigmatullin244/Data-Science-For-Beginners-from-scratch-SENATOROV/tree/af076f522bbf6f2fa41b67df99302a55a779bea6
+#
 # 2.9 Как открыть запрос слияния, указывающий на другой запрос слияния и зачем это нужно? (Рисунок 117)
 #     - Нужно сделать Pull request, указав другой Pull request
 #     - Это нужно для того, чтобы обеспечить правильный порядок слияния или избежать конфликтов и ошибок
