@@ -20,12 +20,12 @@ class CatClass:
 # +
 # Создание объекта
 
-# создадим объект Matroskin класса CatClass
-Matroskin: CatClass = CatClass()
+# создадим объект matroskin класса CatClass
+matroskin: CatClass = CatClass()
 # -
 
 # проверим тип данных созданной переменной
-type(Matroskin)
+type(matroskin)
 
 # +
 # Атрибуты класса
@@ -53,10 +53,10 @@ class CatClass:  # type: ignore[no-redef]  # pylint: disable=function-redefined
 # +
 # повторно создадим объект класса CatClass
 # передав ему параметр цвета шерсти
-Matroskin = CatClass("gray")  # type: ignore[call-arg]
+matroskin = CatClass("gray")  # type: ignore[call-arg]
 
 # и выведем атрибуты класса
-Matroskin.color, Matroskin.type_  # type: ignore[attr-defined]
+matroskin.color, matroskin.type_  # type: ignore[attr-defined]
 # -
 
 # # Методы класса
@@ -91,13 +91,13 @@ class CatClass:  # type: ignore[no-redef]  # pylint: disable=function-redefined
 # -
 
 # создадим объект
-Matroskin = CatClass("gray")  # type: ignore[call-arg]
+matroskin = CatClass("gray")  # type: ignore[call-arg]
 
 # применим метод .meow()
-Matroskin.meow()  # type: ignore[attr-defined]
+matroskin.meow()  # type: ignore[attr-defined]
 
 # и метод .info()
-Matroskin.info()  # type: ignore[attr-defined]
+matroskin.info()  # type: ignore[attr-defined]
 
 # # Принципы объектно-ориентированного программирования
 
@@ -116,11 +116,11 @@ Matroskin.info()  # type: ignore[attr-defined]
 # +
 # Причем не просто получить доступ, но и изменить их.
 
-# изменим атрибут type_ объекта Matroskin на dog
-Matroskin.type_ = "dog"  # type: ignore[attr-defined]
+# изменим атрибут type_ объекта matroskin на dog
+matroskin.type_ = "dog"  # type: ignore[attr-defined]
 
 # выведем этот атрибут
-Matroskin.type_  # type: ignore[attr-defined]
+matroskin.type_  # type: ignore[attr-defined]
 
 # +
 # Способ 1. Один символ подчеркивания указывает на приватный атрибут
@@ -159,10 +159,10 @@ class CatClass:  # type: ignore[no-redef]  # pylint: disable=function-redefined
 
 
 # +
-Matroskin = CatClass("gray")  # type: ignore[call-arg]
+matroskin = CatClass("gray")  # type: ignore[call-arg]
 
 # теперь при вызове этого атрибута Питон выдаст ошибку
-# Matroskin.__type_
+# matroskin.__type_
 
 # +
 # Наследование
@@ -231,8 +231,7 @@ pigeon.move()
 
 
 # снова создадим класс Bird
-# pylint: disable=function-redefined
-class Bird(Animal):  # type: ignore[no-redef]
+class Bird(Animal):  # type: ignore[no-redef]  # pylint: disable=function-redefined
     """Класс птицы со скоростью полета."""
 
     def __init__(self, weight: float, length: float, flying_speed: float) -> None:

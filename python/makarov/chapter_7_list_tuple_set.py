@@ -119,6 +119,7 @@ print(combined_list)
 # # Распаковка списков
 
 # заново создадим список с днями недели
+# pylint: disable=duplicate-code
 week = [
     "Понедельник",
     "Вторник",
