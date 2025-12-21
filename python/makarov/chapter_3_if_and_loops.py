@@ -173,7 +173,7 @@ for i in sorted(my_list, reverse=True):
 # пусть дан список с днями недели
 # pylint: disable=duplicate-code
 days = [
-    "Понедельник",
+    "Monday",
     "Вторник",
     "Среда",
     "Четверг",
